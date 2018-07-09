@@ -35,6 +35,7 @@ namespace BankReconApi.Models
     public class RegisterBindingModel
     {
         [Required]
+        [Key]
         [Display(Name = "Email")]
         public string Email { get; set; }
 

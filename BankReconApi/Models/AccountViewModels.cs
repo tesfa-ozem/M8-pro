@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace BankReconApi.Models
 {
@@ -37,7 +38,7 @@ namespace BankReconApi.Models
     public class UserLoginInfoViewModel
     {
         public string LoginProvider { get; set; }
-
+        [Key]
         public string ProviderKey { get; set; }
     }
 }

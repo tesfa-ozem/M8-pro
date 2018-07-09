@@ -29,5 +29,7 @@ namespace BankReconApi.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<BankReconApi.Models.FileData> FileDatas { get; set; }
     }
 }
